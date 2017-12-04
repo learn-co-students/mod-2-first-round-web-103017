@@ -1,11 +1,11 @@
 <h2>All Superheroes</h2>
 
-
-<%= form_tag("/superheroes", method: "get") do %>
+<%= form_tag("superheroes/search", method: "get") do %>
   <%= label_tag(:super_name, "Search for:") %>
   <%= text_field_tag(:super_name) %>
   <%= submit_tag("Search") %>
 <% end %>
+
 <ul>
   <% @superheroes.each do |superhero| %>
     <li>
