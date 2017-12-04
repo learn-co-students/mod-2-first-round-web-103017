@@ -3,7 +3,7 @@
 <ul>
   <% @superpowers.each do |superpower| %>
     <li>
-      <%= superpower.name %>
+      Name: <%= superpower.name.titleize %>
       <br>
       Description: <%= superpower.description %>
     </li>
