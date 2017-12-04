@@ -1,0 +1,11 @@
+Links:
+<%= link_to "Superheroes", superheroes_path%>
+ |
+<%= link_to "Superpowers", superpowers_path%>
+ |
+<%= link_to "Create New Superhero", new_superhero_path%>
+
+
+<h1><%= @superhero.name%></h1>
+<h3>Super Hero Name: <%= @superhero.super_name.capitalize%></h3>
+<h3>Super Power: <%= link_to @superhero.superpower.name.capitalize, superpower_path(@superhero.superpower)%></h3>
