@@ -1,0 +1,11 @@
+<h1> Create New Superhero! </h1>
+  <%= form_for @superhero do |f|%>
+  <p> <%= f.label :name %> </p>
+  <p> <%= f.text_field :name %> </p>
+  <br>
+  <p> <%= f.label :super_name %> </p>
+  <p> <%= f.text_field :super_name %> </p>
+  <br>
+  <p> <%= f.collection_select(:superpower_id, Superpower.all, :id, :name)%> </p>
+  <p> <%= f.submit %> </p>
+<% end %>
