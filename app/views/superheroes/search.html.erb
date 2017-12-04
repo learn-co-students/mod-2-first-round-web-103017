@@ -1,0 +1,8 @@
+<% if @superpowers != nil %>
+<% @superpowers.superheroes.each do |x| %>
+
+	<%= link_to x.name, superhero_path(x) %>
+	<br>
+
+<% end %>
+<% end %> 
