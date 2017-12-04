@@ -1,10 +1,33 @@
+Links:
+<%= link_to "Superheroes", superheroes_path%>
+ |
+<%= link_to "Superpowers", superpowers_path%>
+ |
+<%= link_to "Create New Superhero", new_superhero_path%>
+
+
 <h2>All Superheroes</h2>
 
 <ul>
   <% @superheroes.each do |superhero| %>
     <li>
-      <%= superhero.super_name %>
+
+      <%= link_to superhero.super_name, superhero_path(superhero)%>
     </li>
     <br>
   <% end %>
 </ul>
+
+<p>Filter by Super Power</p>
+
+<ul>
+  <% @superpowers.each do |superpower| %>
+    <li>
+
+      <%= link_to superpower.name.capitalize, superpower_path(superpower)%>
+    </li>
+    <br>
+  <% end %>
+</ul>
+
+<p><%= link_to "Create New Superhero", new_superhero_path%></p>
