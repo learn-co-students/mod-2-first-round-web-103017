@@ -6,6 +6,7 @@ superpowers = [
   {name:"flight",description: "gives the wielder the ability to fly through the skys at supersonic speed"},
   {name:"super human senses",description: "allows the person to user their senses at super human level"},
   {name:"elasticity",description: "can stretch the human body to extreme lengths"},
+  {name:"accurate arm",description: "can throw snowballs very very accurately within a range of 100 miles"}
 ]
 
 superpowers.each {|superpower| Superpower.create(superpower)}
@@ -20,7 +21,8 @@ superheroes = [
   {name:"T'Challa", super_name:"Black Panther" },
   {name:"Thor Odinson", super_name:"Thor" },
   {name:"Tony Stark", super_name:"Iron Man" },
-  {name:"Carol Danvers", super_name:"Captain Marvel" }
+  {name:"Carol Danvers", super_name:"Captain Marvel" },
+  {name:"Jean-Claude Van Damme", super_name:"Stretchman Flex" }
 ]
 
 # ---------------

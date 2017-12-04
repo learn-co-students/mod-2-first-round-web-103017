@@ -1,0 +1,11 @@
+<h1>Create Super Power:</h1>
+
+<%= form_tag superpowers_path do %>
+  <label>Super Power Name: </label>
+  <%= text_field_tag 'superpower[name]' %><br>
+
+  <label>Super Power Description: </label>
+  <%= text_area_tag 'superpower[description]' %><br>
+
+  <%= submit_tag "Create Super Power!" %>
+<% end %>
