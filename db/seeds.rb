@@ -1,5 +1,5 @@
-Superhero.destroy_all
-Superpower.destroy_all
+# Superhero.destroy_all
+# Superpower.destroy_all
 
 superpowers = [
   {name:"super strength",description: "gives the wielder super human strengths"},
@@ -30,7 +30,7 @@ superheroes = [
 # Just uncomment line 33 and run `rake db:seed` again in your terminal.
 # (Note: If you try to do this before you set up proper associations, it will error.)
 # ---------------
-superheroes = superheroes.map { |hero| hero.merge( { superpower_id: Superpower.all.sample.id } ) }
+superheroes2 = superheroes.map { |hero| hero.merge( { superpower_id: Superpower.all.sample.id } ) }
 # ---------------
 
-superheroes.each { |hero| Superhero.create(hero) }
+superheroes2.each { |hero| Superhero.create(hero) }

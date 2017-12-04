@@ -42,8 +42,11 @@ Read through the instructions to get a sense of the scope of this code challenge
 
   ![img](add_hero.gif)
 
-7. Make sure no two superheroes have the same super name.
 
+###########
+7. Make sure no two superheroes have the same super name. - IS THIS VAILDATIONS???
+
+##############
 8. Add a filter to the index view of the superheroes. This will allow the visitor to search for an existing superpower and display all the superheroes with that superpower on the same view page.
 
 ![img](gif3.gif)
