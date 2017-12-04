@@ -1,7 +1,7 @@
 <h2>All Superheroes</h2>
 
 
-<%= form_tag("/search", method: "get") do %>
+<%= form_tag("/superheroes", method: "get") do %>
   <%= label_tag(:query, "Search for Superpower:") %>
   <%= text_field_tag(:query) %>
   <%= submit_tag("Search") %>
