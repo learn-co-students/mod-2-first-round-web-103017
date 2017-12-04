@@ -1,0 +1,21 @@
+<h1>Create Super Hero:</h1>
+
+<%= form_for @superhero do |f| %>
+
+<div class="">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+
+<div class="">
+  <%= f.label :super_name %>
+  <%= f.text_field :super_name %>
+</div>
+
+<div class="">
+  <%= f.label :superpower %>
+  <%= f.collection_select :superpower_id, @superpowers, :id, :name %>
+</div>
+
+  <%= f.submit %>
+<%end %>
