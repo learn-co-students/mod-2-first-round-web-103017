@@ -36,18 +36,17 @@ Read through the instructions to get a sense of the scope of this code challenge
 
 4. The superpower show page should have its name and description.
 
-5. Add a filter to the index view of the superheroes. This will allow the visitor to search for an existing superpower and display all the superheroes with that superpower on the same view page.
+5. As a visitor to the website, I should be able to create a new superhero with its name and super name.
 
-![img](gif3.gif)
-
-6. As a visitor to the website, I should be able to create a new superhero with its name and super name.
-
-7. The form should also allow each superhero should be created with **only one of the existing superpowers**.
+6. The form should also allow each superhero should be created with **only one of the existing superpowers**.
 
   ![img](add_hero.gif)
 
-8. Make sure no two superheroes have the same super name.
+7. Make sure no two superheroes have the same super name.
 
+8. Add a filter to the index view of the superheroes. This will allow the visitor to search for an existing superpower and display all the superheroes with that superpower on the same view page.
+
+![img](gif3.gif)
 
 
 ### Hints / Tips
