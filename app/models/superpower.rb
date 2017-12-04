@@ -1,2 +1,3 @@
 class Superpower < ApplicationRecord
+
 end
