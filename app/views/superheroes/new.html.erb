@@ -1,0 +1,15 @@
+<h2>Crate new hero</h2>
+
+<%= form_for @superhero do |f| %>
+  <%=f.label :name%><br>
+  <%=f.text_field :name%><br>
+
+  <%=f.label :super_name%><br>
+  <%=f.text_field :super_name%><br>
+
+  <%=f.label :superpower%><br>
+  <%=f.collection_select :superpower, Superpower.all, :id, :name%><br>
+<br>
+  <%= f.submit %>
+
+<% end %>

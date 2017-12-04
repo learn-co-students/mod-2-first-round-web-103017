@@ -29,8 +29,8 @@ superheroes = [
 # uncomment the following method to associate superheroes with a superpower!
 # Just uncomment line 33 and run `rake db:seed` again in your terminal.
 # (Note: If you try to do this before you set up proper associations, it will error.)
-# ---------------
+
 superheroes = superheroes.map { |hero| hero.merge( { superpower_id: Superpower.all.sample.id } ) }
-# ---------------
+
 
 superheroes.each { |hero| Superhero.create(hero) }

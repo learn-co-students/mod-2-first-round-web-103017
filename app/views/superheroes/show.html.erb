@@ -1,0 +1,10 @@
+<h2>Superhero Info:</h2>
+
+<ul>
+  <label>Name:</label>
+  <li><%=@superhero.name%></li>
+  <label>Superhero Name:</label>
+  <li><%=@superhero.super_name%></li>
+  <label>Superpower:</label>
+  <li><%=link_to Superpower.find(@superhero.superpower_id).name, superpower_path(id: @superhero.superpower_id)%></li>
+</ul>
