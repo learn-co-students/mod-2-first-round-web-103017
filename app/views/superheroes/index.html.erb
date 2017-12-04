@@ -3,8 +3,12 @@
 <ul>
   <% @superheroes.each do |superhero| %>
     <li>
-      <%= superhero.super_name %>
+      <%= link_to superhero.super_name, superhero_path(superhero) %>
     </li>
     <br>
   <% end %>
 </ul>
+
+<%= link_to "Click to create a new Superhero, you Superuser!", new_superhero_path %>
+
+<!-- filter should go here -->
