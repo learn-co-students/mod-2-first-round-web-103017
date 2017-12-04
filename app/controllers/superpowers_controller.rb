@@ -1,5 +1,10 @@
 class SuperpowersController < ApplicationController
   def index
-    @superpowers = Superpower.all
+    @powers = Superpower.all
   end
+
+  def show
+    @power = Superpower.find(params[:id])
+  end
+
 end
