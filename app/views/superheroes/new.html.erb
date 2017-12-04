@@ -1,0 +1,18 @@
+<%= form_for :superhero do |f| %>
+  <p>
+    <%= f.label :name  %> <br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :super_name  %> <br>
+    <%= f.text_field :super_name%>
+  </p>
+  <p>
+    <%= f.collection_select :superpower_id, Superpower.all,:id,:name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
