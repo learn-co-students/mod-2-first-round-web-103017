@@ -1,0 +1,9 @@
+<h1> <%= @superpower.name %> </h1>
+<h2> Description: <%= @superpower.description %> </h2>
+<ul>
+  <% @superpower.superheroes.each do |sh| %>
+    <li>
+      <%= link_to sh.super_name, superhero_path(sh) %>
+    </li>
+  <% end %>
+</ul>
