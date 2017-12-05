@@ -1,11 +1,10 @@
 <h2>All Superheroes</h2>
 
-<%= form_tag(controller: "superheroes", action: "index", method: "post") do%>
-  <p><%= label_tag(:superpower, "Search By Super Power") %></p>
-  <%= text_field_tag(:superpower) %>
-  <%= submit_tag("Search") %>
+<%= form_tag(superheroes_path, :method => "get", id: "search-form") do %>
+    <p><%= label_tag "Search By Super Powers"%></p>
+    <%= text_field_tag :search, params[:search]%>
+    <%= submit_tag "Search", :name => nil %>
 <% end %>
-
 
 <ul>
   <% @superheroes.each do |superhero| %>

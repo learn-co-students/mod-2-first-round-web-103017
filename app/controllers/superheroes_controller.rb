@@ -2,6 +2,15 @@ class SuperheroesController < ApplicationController
   def index
     # raise params.inspect
     @superheroes = Superhero.all
+    if params[:search]
+      if params[:search] != ""
+        @superheroes = Superhero.search(params[:search])
+      else
+        @superheroes = Superhero.all
+      end
+    else
+      @superheroes = Superhero.all
+    end
   end
 
   def show
@@ -10,20 +19,20 @@ class SuperheroesController < ApplicationController
 
   def new
     @superhero = Superhero.new
-    @superpowers = Superpower.all
+    # @superpowers = Superpower.all
   end
 
   def create
     # raise params.inspect
-    @superhero = Superhero.create(superhero_params(:name, :super_name, :superpower_id))
-    redirect_to superhero_path(@superhero)
+    # @superhero = Superhero.create(superhero_params(:name, :super_name, :superpower_id))
+    # redirect_to superhero_path(@superhero)
 
-    # @superhero = Superhero.new(superhero_params(:name, :super_name, :superpower_id))
-    # if @superhero.save
-    #   redirect_to superhero_path(@superhero)
-    # else
-    #   render :new
-    # end
+    @superhero = Superhero.new(superhero_params(:name, :super_name, :superpower_id))
+    if @superhero.save
+      redirect_to superhero_path(@superhero)
+    else
+      render :new
+    end
   end
 
   private
